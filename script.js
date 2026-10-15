@@ -4,12 +4,13 @@ const seekBar = document.getElementById('seek-bar');
 const currentTimeDisplay = document.getElementById('current-time');
 const durationDisplay = document.getElementById('duration');
 
+// Playlist disesuaikan (tanpa folder assets/lagu/ atau assets/cover/)
 const playlist = [
-    { src: 'assets/lagu/lagu1.mp3', title: 'Hanya Untuk-Mu', artist: 'Ten2Five', cover: 'assets/cover/cover1.jpg' },
-    { src: 'assets/lagu/lagu2.mp3', title: 'Aku Milikmu', artist: 'Dewa19', cover: 'assets/cover/cover2.jpg' },
-    { src: 'assets/lagu/lagu3.mp3', title: 'Kangen', artist: 'Dewa19', cover: 'assets/cover/cover3.jpg' },
-    { src: 'assets/lagu/lagu4.mp3', title: 'Keabadian', artist: 'Reza Artamevia', cover: 'assets/cover/cover4.jpg' },
-    { src: 'assets/lagu/lagu5.mp3', title: 'Sempurna', artist: 'Andra & The Backbone', cover: 'assets/cover/cover5.jpg' }
+    { src: 'lagu1.mp3', title: 'Hanya Untuk-Mu', artist: 'Ten2Five', cover: 'cover1.jpg' },
+    { src: 'lagu2.mp3', title: 'Aku Milikmu', artist: 'Dewa19', cover: 'cover2.jpg' },
+    { src: 'lagu3.mp3', title: 'Kangen', artist: 'Dewa19', cover: 'cover3.jpg' },
+    { src: 'lagu4.mp3', title: 'Keabadian', artist: 'Reza Artamevia', cover: 'cover4.jpg' },
+    { src: 'lagu5.mp3', title: 'Sempurna', artist: 'Andra & The Backbone', cover: 'cover5.jpg' }
 ];
 
 let currentSongIndex = 0; 
@@ -190,7 +191,8 @@ function executeOpenGift() {
     if(isGiftOpened) return;
     isGiftOpened = true;
 
-    changeSong('assets/lagu/lagu1.mp3', 'Hanya Untuk-Mu', 'Ten2Five', 'assets/cover/cover1.jpg');
+    // Path disesuaikan ke root
+    changeSong('lagu1.mp3', 'Hanya Untuk-Mu', 'Ten2Five', 'cover1.jpg');
 
     const giftIcon = document.getElementById('gift-icon');
     const tapText = document.getElementById('tap-text');
