@@ -11,7 +11,7 @@
 <body>
 
     <audio id="bg-music">
-        <source src="assets/lagu/lagu.mp3" type="audio/mpeg">
+        <source src="lagu1.mp3" type="audio/mpeg">
     </audio>
 
     <div class="petals" id="petals-container"></div>
@@ -22,20 +22,20 @@
     </div>
 
     <div id="popup-overlay" class="hidden">
-    <div id="popup-box">
-        <h3 class="serif">Bener bener mau buka surprisenya nihh 🥺</h3>
-        <div class="popup-buttons">
-            <button id="btn-yes" class="popup-btn" onclick="confirmOpenGift()">Iyaaa dongggg 🤍</button>
-            <button id="btn-no" class="popup-btn"> Tak Nak 😜</button>
+        <div id="popup-box">
+            <h3 class="serif">Bener bener mau buka surprisenya nihh 🥺</h3>
+            <div class="popup-buttons">
+                <button id="btn-yes" class="popup-btn" onclick="confirmOpenGift()">Iyaaa dongggg 🤍</button>
+                <button id="btn-no" class="popup-btn"> Tak Nak 😜</button>
+            </div>
         </div>
     </div>
-</div>
 
     <div id="main-content">
         
         <div class="music-widget">
             <div class="music-top">
-                <img id="player-cover" src="assets/cover/cover1.jpg" alt="Album Art">
+                <img id="player-cover" src="cover1.jpg" alt="Album Art">
                 <div class="music-info">
                     <span class="title" id="player-title">Hanya Untuk-Mu</span>
                     <span class="artist" id="player-artist">Ten2Five</span>
@@ -43,12 +43,12 @@
             </div>
 
             <div class="progress-wrapper">
-    <input type="range" id="seek-bar" value="0" min="0" max="100" step="0.1">
-    <div class="time-display">
-        <span id="current-time">0:00</span>
-        <span id="duration">0:00</span>
-    </div>
-</div>
+                <input type="range" id="seek-bar" value="0" min="0" max="100" step="0.1">
+                <div class="time-display">
+                    <span id="current-time">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
 
             <div class="controls">
                 <span onclick="prevSong()">⏮</span>
@@ -61,7 +61,7 @@
             <p class="subtitle">sebuah ucapan cinta untuk pujaan hatiku🤍</p>
             <h1 class="title-main serif">Untukmu<br>Pemegang Hatiku</h1>
             <h1 class="title-main serif">Siti Nurmayanti🤍</h1>
-            <img src="assets/foto/fotoawal.jpg" alt="Pemegang Hatiku" style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; border: 3px solid rgba(255, 255, 255, 0.2); box-shadow: 0 0 25px rgba(229,115,115,0.4); margin-bottom: 25px;">
+            <img src="fotoawal.jpg" alt="Pemegang Hatiku" style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; border: 3px solid rgba(255, 255, 255, 0.2); box-shadow: 0 0 25px rgba(229,115,115,0.4); margin-bottom: 25px;">
             <p class="text-body" style="margin-top:10px;">Setiap kelopak bunga menyimpan bisikan tentang betapa berartinya dirimu bagiku.</p>
             <div style="font-size: 24px; margin-top:20px;">🌸</div>
             <button class="next-btn" onclick="nextSection(this)">🤍</button>
@@ -73,32 +73,32 @@
             <p class="subtitle">klik cover art untuk ganti lagu</p>
             <div class="playlist-grid">
 
-                <div class="photo-item" style="cursor: pointer;" onclick="changeSong('assets/lagu/lagu1.mp3', 'Hanya Untuk-Mu', 'Ten2Five', 'assets/cover/cover1.jpg')">
-                    <img src="assets/cover/cover1.jpg" alt="Cover Hanya Untuk-Mu" style="filter: none;">
+                <div class="photo-item" style="cursor: pointer;" onclick="changeSong('lagu1.mp3', 'Hanya Untuk-Mu', 'Ten2Five', 'cover1.jpg')">
+                    <img src="cover1.jpg" alt="Cover Hanya Untuk-Mu" style="filter: none;">
                     <p class="photo-caption" style="font-size: 16px; margin-top: 10px; color: #fff; font-family: 'Montserrat', sans-serif;">Hanya Untuk-Mu</p>
                     <p style="font-size: 11px; color: var(--text-muted);">Ten2Five</p>
                 </div>
 
-                <div class="photo-item" style="cursor: pointer;" onclick="changeSong('assets/lagu/lagu2.mp3', 'Aku Milikmu', 'Dewa19', 'assets/cover/cover2.jpg')">
-                    <img src="assets/cover/cover2.jpg" alt="Cover Aku Milikmu" style="filter: none;">
+                <div class="photo-item" style="cursor: pointer;" onclick="changeSong('lagu2.mp3', 'Aku Milikmu', 'Dewa19', 'cover2.jpg')">
+                    <img src="cover2.jpg" alt="Cover Aku Milikmu" style="filter: none;">
                     <p class="photo-caption" style="font-size: 16px; margin-top: 10px; color: #fff; font-family: 'Montserrat', sans-serif;">Aku Milikmu</p>
                     <p style="font-size: 11px; color: var(--text-muted);">Dewa19</p>
                 </div>
 
-                <div class="photo-item" style="cursor: pointer;" onclick="changeSong('assets/lagu/lagu3.mp3', 'Kangen', 'Dewa19', 'assets/cover/cover3.jpg')">
-                    <img src="assets/cover/cover3.jpg" alt="Cover Kangen" style="filter: none;">
+                <div class="photo-item" style="cursor: pointer;" onclick="changeSong('lagu3.mp3', 'Kangen', 'Dewa19', 'cover3.jpg')">
+                    <img src="cover3.jpg" alt="Cover Kangen" style="filter: none;">
                     <p class="photo-caption" style="font-size: 16px; margin-top: 10px; color: #fff; font-family: 'Montserrat', sans-serif;">Kangen</p>
                     <p style="font-size: 11px; color: var(--text-muted);">Dewa19</p>
                 </div>
                 
-                <div class="photo-item" style="cursor: pointer;" onclick="changeSong('assets/lagu/lagu4.mp3', 'Keabadian', 'Reza Artamevia', 'assets/cover/cover4.jpg')">
-                    <img src="assets/cover/cover4.jpg" alt="Cover Keabadian" style="filter: none;">
+                <div class="photo-item" style="cursor: pointer;" onclick="changeSong('lagu4.mp3', 'Keabadian', 'Reza Artamevia', 'cover4.jpg')">
+                    <img src="cover4.jpg" alt="Cover Keabadian" style="filter: none;">
                     <p class="photo-caption" style="font-size: 16px; margin-top: 10px; color: #fff; font-family: 'Montserrat', sans-serif;">Keabadian</p>
                     <p style="font-size: 11px; color: var(--text-muted);">Reza Artamevia</p>
                 </div>
 
-                <div class="photo-item" style="cursor: pointer;" onclick="changeSong('assets/lagu/lagu5.mp3', 'Sempurna', 'Andra & The Backbone', 'assets/cover/cover5.jpg')">
-                    <img src="assets/cover/cover5.jpg" alt="Cover Sempurna" style="filter: none;">
+                <div class="photo-item" style="cursor: pointer;" onclick="changeSong('lagu5.mp3', 'Sempurna', 'Andra & The Backbone', 'cover5.jpg')">
+                    <img src="cover5.jpg" alt="Cover Sempurna" style="filter: none;">
                     <p class="photo-caption" style="font-size: 16px; margin-top: 10px; color: #fff; font-family: 'Montserrat', sans-serif;">Sempurna</p>
                     <p style="font-size: 11px; color: var(--text-muted);">Andra & The Backbone</p>
                 </div>
@@ -138,14 +138,14 @@
             <p class="subtitle">Waktu terhenti di balik lensa, namun rasanya tak pernah pudar oleh masa.</p>
             <h2 class="title-sub serif">Baby You're<br>Divine</h2>
             <div class="photo-grid">
-                <div class="photo-item"><img src="assets/foto/foto1.jpg" alt="You"><p class="photo-caption">you</p></div>
-                <div class="photo-item"><img src="assets/foto/foto2.jpg" alt="Are"><p class="photo-caption">are</p></div>
-                <div class="photo-item"><img src="assets/foto/foto3.jpg" alt="So"><p class="photo-caption">so</p></div>
-                <div class="photo-item"><img src="assets/foto/foto4.jpg" alt="Beautiful"><p class="photo-caption">beautiful</p></div>
-                <div class="photo-item"><img src="assets/foto/foto5.jpg" alt="Like"><p class="photo-caption">like</p></div>
-                <div class="photo-item"><img src="assets/foto/foto6.jpg" alt="An"><p class="photo-caption">an</p></div>
-                <div class="photo-item"><img src="assets/foto/foto7.jpg" alt="Angel"><p class="photo-caption">angel</p></div>
-                <div class="photo-item"><img src="assets/foto/foto8.jpg" alt="🤍"><p class="photo-caption">🤍</p></div>
+                <div class="photo-item"><img src="foto1.png" alt="You"><p class="photo-caption">you</p></div>
+                <div class="photo-item"><img src="foto2.png" alt="Are"><p class="photo-caption">are</p></div>
+                <div class="photo-item"><img src="foto3.png" alt="So"><p class="photo-caption">so</p></div>
+                <div class="photo-item"><img src="foto4.png" alt="Beautiful"><p class="photo-caption">beautiful</p></div>
+                <div class="photo-item"><img src="foto5.png" alt="Like"><p class="photo-caption">like</p></div>
+                <div class="photo-item"><img src="foto6.png" alt="An"><p class="photo-caption">an</p></div>
+                <div class="photo-item"><img src="foto7.png" alt="Angel"><p class="photo-caption">angel</p></div>
+                <div class="photo-item"><img src="foto8.png" alt="🤍"><p class="photo-caption">🤍</p></div>
             </div>
             <button class="next-btn" onclick="nextSection(this)">🤍</button>
         </section>
@@ -156,21 +156,21 @@
             <div class="video-grid" style="margin-top: 30px;">
                 <div class="video-container" style="margin: 0; max-width: 100%;">
                     <video controls controlsList="nodownload" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover;">
-                        <source src="assets/video/video2.mp4" type="video/mp4">
+                        <source src="video2.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="video-container" style="margin: 0; max-width: 100%;">
                     <video controls controlsList="nodownload" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover;">
-                        <source src="assets/video/video3.mp4" type="video/mp4">
+                        <source src="video3.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="video-container" style="margin: 0; max-width: 100%;">
                     <video controls controlsList="nodownload" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover;">
-                        <source src="assets/video/video4.mp4" type="video/mp4">
+                        <source src="video4.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="video-container" style="margin: 0; max-width: 100%;">
-                    <img src="assets/foto/fotospec.jpg" alt="LUCUU BANGETTT😫😫" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block;">
+                    <img src="fotospec.png" alt="LUCUU BANGETTT😫😫" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block;">
                 </div>
             </div>
             <p class="text-body" style="font-size: 13px; margin-top: 20px;">Every second with you is a treasure.</p>
